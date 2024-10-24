@@ -13,7 +13,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSubmit(email, password);
-    setSuccessMessage('Signed in successfully!');
+    setSuccessMessage('Signed out successfully!');
     setEmail(''); 
     setPassword('');
   };
