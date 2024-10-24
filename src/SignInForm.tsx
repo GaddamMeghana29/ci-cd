@@ -39,7 +39,7 @@ const SignInForm: React.FC<SignInFormProps> = ({ onSubmit }) => {
         />
       </label>
       <button type="submit" className="submit-btn">
-        Sign In
+        SignIn
       </button>
       {successMessage && (
         <p className="success-message">{successMessage}</p>
