@@ -15,8 +15,3 @@ jobs:
         run: npm install
       - name: Build app
         run: npm run build
-      - name: Deploy to GitHub Pages
-        uses: gh-pages/deploy@v1
-        with:
-          remote_branch: main
-          dir: build
