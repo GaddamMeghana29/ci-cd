@@ -1,7 +1,7 @@
 name: Build
 
 on:
-  push:
+  commit:
     branches:
       - main
 
@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Build app
-        run: npm run build
       - name: Install dependencies
         run: npm install
+      - name: Build app
+        run: npm run build
